@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --azul-muito-escuro:#171B59;
+  --azul-escuro:#282D99;
+  --azul-escuro:#3239BF;
+  --azul-neutro:#3942DA;
+  --azul-claro:#3C44E6;
+}
+
+body{
+  background-color: #fafafa;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--azul-muito-escuro);
+  color: white;
+}
+
+header h1{
+  padding: 20px 20px;
+  font-size: 3.5em;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header li{
+  padding: 10px 20px;
+  transition: .2s;
+}
+
+header li:hover{
+  color: #caccff;
+  cursor: pointer;
+}
+
+header nav{
+  font-size: 1.5em;
+}
+
+main{
+  margin: auto;
+}
+
+section h2{
+  text-align: center;
+  font-size: 4em;
+  padding: 20px;
+  color: var(--azul-neutro);
+}
+
+section p{
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+#esquerda{
+  display: inline-block;
+  width: 50%;
+  padding-right: 50px;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+#esquerda p{
+  max-width: 700px;
+  margin: auto;
+}
+
+#esquerda button{
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  transition:.3s;
+}
+
+#esquerda button:hover{
+  background:linear-gradient(to top, #686fff,#6f76ff);
+  cursor: pointer;
+  color: white;
+}
+
+#botoes{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.circulo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--azul-escuro);
+  transition: .2s;
+}
+
+.circulo:hover{
+  background-color: #252c8f;
+  cursor: pointer;
+}
+
+aside{
+  width: 47%;
+  float: right;
+  padding: 20px;
+  background-image:url(img/fundo.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  height: 100vh;
+  color: white;
+}
+
+aside #margin{
+margin-top: 80px;
+}
+
+aside img{
+  margin: auto;
+  display: block;
+}
+
+aside p{
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer{
+  text-align: center;
+  clear: both;
+  background:linear-gradient(to top, var(--azul-muito-escuro), #252c8f);
+  color: white;
+  font-size: 1.3em;
+}
+
+footer a{
+  color: white;
+}
+
+footer div{
+  padding-top:50px ;
+  padding-bottom: 50px;
+}
